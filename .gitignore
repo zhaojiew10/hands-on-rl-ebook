@@ -1,0 +1,28 @@
+# MkDocs build output
+site/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local chapter workspaces, logs and validation reports
+.work/
+.worktrees/
+*.log
+.mkdocs.pid
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+*secrets*
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

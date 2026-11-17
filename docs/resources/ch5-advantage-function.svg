@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
+  <title id="title">优势函数：动作价值减去状态价值基线</title>
+  <desc id="desc">Aπ(s_t,a_t) 等于 qπ(s_t,a_t) 减 vπ(s_t)，表示所选动作相对于当前状态平均水平的优势。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7faf5"/>
+      <stop offset="1" stop-color="#edf4e8"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#588157"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="520" rx="24" fill="url(#bg)"/>
+  <text x="700" y="82" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="34" font-weight="600" fill="#243b20">优势函数（Advantage Function）</text>
+  <rect x="90" y="128" width="1220" height="210" rx="22" fill="#ffffff" stroke="#a3b18a" stroke-width="2"/>
+  <text x="700" y="252" text-anchor="middle" font-family="Cambria Math, STIX Two Math, serif" font-size="58" fill="#1b2b1a">
+    A<tspan baseline-shift="sub" font-size="34">π</tspan>(s<tspan baseline-shift="sub" font-size="34">t</tspan>, a<tspan baseline-shift="sub" font-size="34">t</tspan>) = q<tspan baseline-shift="sub" font-size="34">π</tspan>(s<tspan baseline-shift="sub" font-size="34">t</tspan>, a<tspan baseline-shift="sub" font-size="34">t</tspan>) − v<tspan baseline-shift="sub" font-size="34">π</tspan>(s<tspan baseline-shift="sub" font-size="34">t</tspan>)
+  </text>
+  <line x1="910" y1="285" x2="910" y2="385" stroke="#588157" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1140" y1="285" x2="1140" y2="385" stroke="#588157" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="350" y1="285" x2="350" y2="385" stroke="#588157" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="350" y="430" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="28" fill="#31572c">优势：比默认行为好多少</text>
+  <text x="910" y="430" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="28" fill="#31572c">在状态下选择该动作的价值</text>
+  <text x="1140" y="475" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="28" fill="#31572c">状态价值基线</text>
+</svg>

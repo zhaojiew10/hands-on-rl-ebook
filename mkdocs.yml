@@ -1,0 +1,66 @@
+site_name: 强化学习研究训练营
+site_description: 从智能体—环境接口到 RLHF、GRPO 与 Agentic RAG，共 3 个部分、8 章
+site_author: zhaojiew10
+site_url: https://zhaojiew10.github.io/hands-on-rl-ebook/
+repo_url: https://github.com/zhaojiew10/hands-on-rl-ebook
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+
+markdown_extensions:
+  - admonition
+  - tables
+  - def_list
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 电子书首页: index.md
+  - "第一部分 · 强化学习基础与价值方法":
+      - "第 1 章 强化学习基础：智能体—环境接口": chapters/ch1.md
+      - "第 2 章 动态规划、蒙特卡洛与时序差分学习": chapters/ch2.md
+  - "第二部分 · 策略梯度与智能体实践":
+      - "第 3 章 面向电子游戏的 AI 智能体": chapters/ch3.md
+      - "第 4 章 REINFORCE、基线与广义优势估计": chapters/ch4.md
+  - "第三部分 · 大语言模型与智能体强化学习":
+      - "第 5 章 从零理解人类反馈强化学习（RLHF）": chapters/ch5.md
+      - "第 6 章 使用 OpenRLHF 的 PPO 实战：Reddit 摘要器": chapters/ch6.md
+      - "第 7 章 组相对策略优化（GRPO）": chapters/ch7.md
+      - "第 8 章 基于强化学习的 Agentic RAG": chapters/ch8.md
+  - "附录":
+      - "课程资源导航": appendix/resources.md
